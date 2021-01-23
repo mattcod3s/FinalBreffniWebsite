@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -79,7 +80,7 @@
         <div class="special-container">
             <div class="special-title">
                 <div class="featured-title">
-                    <h2>FEATURED</h2>
+                    <h2>Today's Specials</h2>
                 </div>
             </div>
             <div class="special-content">
@@ -337,80 +338,85 @@
             </div>
         </div>
         <div id="booking-main">
-            <div class="booking-form-area">
-                <div id="exit-btn"></div>
-                <form id="form" autocomplete="off">
-                    <div id="form-col">
-                        <div id="name-section">
-                            <input id="nameInput" type="text" name="name" autocomplete="off" required>
-                            <label for="name" class="name-label" id="nameLabel">
-                                <span class="name-content">Name</span>
-                            </label>
-                        </div>
-                        <div id="invalid1" class="invalid">
-                            <h5>Invalid: Only Letters Allowed</h5>
-                        </div>
-                        <div id="name-section">
-                            <input id="phoneInput" type="number" name="name" autocomplete="off" required>
-                            <label for="name" class="name-label" id="phoneLabel">
-                                <span class="name-content">Phone</span>
-                            </label>
-                        </div>
-                        <div id="invalid2" class="invalid">
-                            <h5>Invalid: Number Must be 10 digits</h5>
-                        </div>
-                        <div id="name-section">
-                            <input id="emailInput" type="text" name="name" autocomplete="off" required>
-                            <label for="name" class="name-label" id="emailLabel">
-                                <span class="name-content">E-mail</span>
-                            </label>
-                        </div>
-                        <div id="invalid3" class="invalid">
-                            <h5>Invalid: Wrong Email</h5>
-                        </div>
-                    </div>
-                    <div id="form-col">
-                        <div id="name-section">
-                            <input id="seatingInput" type="number" name="name" autocomplete="off" required>
-                            <label for="name" class="name-label" id="seatingLabel">
-                                <span class="name-content">Seating</span>
-                            </label>
-                        </div>
-                        <div id="invalid4" class="invalid">
-                            <h5>Invalid: Numbers Only</h5>
-                        </div>
+            <div id="booking-form-area">
+                <div class="form-container">
+                    <div id="exit-btn"></div>
+                    <form id="form" autocomplete="off">
+                        <div id="form-col">
                             <div id="name-section">
-                            <input id="dateInput" type="date" name="name" autocomplete="off" required>
-                            <label for="name" class="name-label" id="dateLabel">
-                                <span class="name-content">Date</span>
-                            </label>
+                                <input id="nameInput" type="text" name="name" autocomplete="off" required>
+                                <label for="name" class="name-label" id="nameLabel">
+                                    <span class="name-content">Name</span>
+                                </label>
+                            </div>
+                            <div id="invalid1" class="invalid">
+                                <h5>Invalid: Only Letters Allowed</h5>
+                            </div>
+                            <div id="name-section">
+                                <input id="phoneInput" type="number" name="name" autocomplete="off" required>
+                                <label for="name" class="name-label" id="phoneLabel">
+                                    <span class="name-content">Phone</span>
+                                </label>
+                            </div>
+                            <div id="invalid2" class="invalid">
+                                <h5>Invalid: Number Must be 10 digits</h5>
+                            </div>
+                            <div id="name-section">
+                                <input id="emailInput" type="text" name="name" autocomplete="off" required>
+                                <label for="name" class="name-label" id="emailLabel">
+                                    <span class="name-content">E-mail</span>
+                                </label>
+                            </div>
+                            <div id="invalid3" class="invalid">
+                                <h5>Invalid: Wrong Email</h5>
+                            </div>
                         </div>
-                        <div id="invalid5" class="invalid">
-                            <h5>Invalid: Unavailable Date</h5>
+                        <div id="form-col">
+                            <div id="name-section">
+                                <input id="seatingInput" type="number" name="name" autocomplete="off" required>
+                                <label for="name" class="name-label" id="seatingLabel">
+                                    <span class="name-content">Seating</span>
+                                </label>
+                            </div>
+                            <div id="invalid4" class="invalid">
+                                <h5>Invalid: Numbers Only</h5>
+                            </div>
+                                <div id="name-section">
+                                <input id="dateInput" type="date" name="name" autocomplete="off" required>
+                                <label for="name" class="name-label" id="dateLabel">
+                                    <span class="name-content">Date</span>
+                                </label>
+                            </div>
+                            <div id="invalid5" class="invalid">
+                                <h5>Invalid: Unavailable Date</h5>
+                            </div>
+                            <div id="name-section">
+                                <input id="timeInput" type="time" name="name" autocomplete="off" required>
+                                <label for="name" class="name-label" id="timeLabel">
+                                    <span class="name-content">Time</span>
+                                </label>
+                            </div>
+                            <div id="invalid6" class="invalid">
+                                <h5>Invalid: Unavailable Time</h5>
+                            </div>
                         </div>
-                        <div id="name-section">
-                            <input id="timeInput" type="time" name="name" autocomplete="off" required>
-                            <label for="name" class="name-label" id="timeLabel">
-                                <span class="name-content">Time</span>
-                            </label>
-                        </div>
-                        <div id="invalid6" class="invalid">
-                            <h5>Invalid: Unavailable Time</h5>
-                        </div>
+                    </form>
+                    <div id="submitButton">
+                        <button id="sbmbtn"><h4>SUBMIT</h4></button>
                     </div>
-                </form>
-                <div id="submitButton">
-                    <button id="sbmbtn"><h4>SUBMIT</h4></button>
+                </div>
+                <div class="form-api-cont">
+                    <div id="api-wrapper" class="clear">
+
+                    </div>
                 </div>
             </div>
-            <!--
             <div id="booking-buttonArea">
                 <div id="booking-button">
                     <h3 id="book-text">BOOK NOW!</h3>
                 </div>
                 <div class="btn2" id="booking-button2"></div>
             </div>
-            -->
         </div>
     </div>
     <div id="map">
@@ -418,7 +424,69 @@
     </div>
     <div class="map-layer"></div>
     <footer>
-
+        <div id="footer-content">
+            <div id="footer-left-content">
+                <div class="left-column">
+                    <div class="left-col-svg">
+                        <div id="foot_svg1"></div>
+                    </div>
+                    <div class="left-col-text">
+                        <h2 id="foot_text1">
+                            We are located at 27 Ashtown Grove, Ashtown, Dublin
+                        </h2>
+                        <a href="">D07 C7KA</a>
+                    </div>
+                </div>
+                <div class="left-column">
+                    <div class="left-col-svg">
+                        <div id="foot_svg2"></div>
+                    </div>
+                    <div class="left-col-text">
+                        <h2 id="foot_text2">
+                            <strong>+1 777 123456</strong>
+                        </h2>
+                    </div>
+                </div>
+                <div class="left-column">
+                    <div class="left-col-svg">
+                        <div id="foot_svg3"></div>
+                    </div>
+                    <div class="left-col-text">
+                        <h2 id="foot_text3">
+                            TheBreffniInn@<br>Gmail.com
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div id="footer-right-content">
+                <div class="right-column1">
+                    <h2>About Us</h2>
+                </div>
+                <div class="right-column2">
+                    <p id="foot-parag">We are a small Restaurant & Pub<br>
+                        located near the Dublin City Centre.<br>
+                        We serve the best Irish drinks as well as <br>
+                        World-Class Steaks, among the rest.<br>
+                        <strong>Visit Us!</strong>
+                    </p>
+                </div>
+                <div class="right-column3">
+                    <div class="social-logo">
+                        <div id="social-1"></div>
+                    </div>
+                    <div class="social-logo">
+                        <div id="social-2"></div>
+                    </div>
+                    <div class="social-logo">
+                        <div id="social-3"></div>
+                    </div>
+                    <div class="social-logo">
+                        <div id="social-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="anchor">Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     </footer>
 </body>
 </html>
