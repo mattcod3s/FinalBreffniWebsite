@@ -3,3 +3,7 @@ import './Styles/reset.scss';
 import './Model/formEvents';
 import './weatherapi'; 
 import './View/validate';
+import './View/menuHover';
+import './Model/responsiveMedia';
+import './Controller/formSubmit';
+import './View/scrollEvents';

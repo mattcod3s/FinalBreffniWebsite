@@ -25,10 +25,12 @@ function validateName(){
         document.getElementById('invalid1').style.visibility = 'visible';
         document.getElementById('invalid1').innerHTML = 'Perfect';
         document.getElementById('invalid1').style.color = 'green';
-        return (true)
-    }
-    else {
-        /*nameInput.value = '';*/
+    } else if (nameInput.value === '') {
+        document.getElementById('invalid1').style.color = 'red';
+        nameLabel.style.borderBottom = 'red 1px solid';
+        document.getElementById('invalid1').style.visibility = 'visible';
+        document.getElementById('invalid1').innerHTML = 'Required Field *';
+    } else {
         nameLabel.style.borderBottom = 'red 1px solid';
         document.getElementById('invalid1').style.color = 'red';
         document.getElementById('invalid1').style.visibility = 'visible';
@@ -42,9 +44,12 @@ function validateEmail() {
         document.getElementById('invalid3').style.visibility = 'visible';
         document.getElementById('invalid3').innerHTML = 'Perfect';
         document.getElementById('invalid3').style.color = 'green';
-        return (true)
+    } else if (emailInput.value === '') {
+        document.getElementById('invalid3').style.color = 'red';
+        document.getElementById('invalid3').style.visibility = 'visible';
+        emailLabel.style.borderBottom = 'red 1px solid';
+        document.getElementById('invalid3').innerHTML = 'Required Field *';
     } else {
-        /*emailInput.value = '';*/
         emailLabel.style.borderBottom = 'red 1px solid';
         document.getElementById('invalid3').style.color = 'red';
         document.getElementById('invalid3').style.visibility = 'visible';
@@ -58,9 +63,12 @@ function validatePhone() {
         document.getElementById('invalid2').style.visibility = 'visible';
         document.getElementById('invalid2').innerHTML = 'Perfect';
         document.getElementById('invalid2').style.color = 'green'; 
-        return (true)
+    } else if (phoneInput.value === '') {
+        document.getElementById('invalid2').style.color = 'red';
+        phoneLabel.style.borderBottom = 'red 1px solid';
+        document.getElementById('invalid2').style.visibility = 'visible';
+        document.getElementById('invalid2').innerHTML = 'Required Field *';
     } else {
-        /*phoneInput.value = '';*/
         phoneLabel.style.borderBottom = 'red 1px solid';
         document.getElementById('invalid2').style.color = 'red'; 
         document.getElementById('invalid2').style.visibility = 'visible';
@@ -76,14 +84,15 @@ function validateSeating() {
         document.getElementById('invalid4').style.color = 'red'; 
         document.getElementById('invalid4').style.visibility = 'visible';
         document.getElementById('invalid4').innerHTML = 'Invalid: Numbers (1 - 12) Only';
-        return (true)
+    } else if (seatingInput.value === '') {
+        document.getElementById('invalid4').style.color = 'red';
+        seatingLabel.style.borderBottom = 'red 1px solid';
+        document.getElementById('invalid4').style.visibility = 'visible';
+        document.getElementById('invalid4').innerHTML = 'Required Field *';
     } else {
-        
         document.getElementById('invalid4').style.visibility = 'visible';
         document.getElementById('invalid4').innerHTML = 'Perfect';
         document.getElementById('invalid4').style.color = 'green'; 
-        
-        
     }
 }
 
