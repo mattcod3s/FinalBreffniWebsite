@@ -11,7 +11,6 @@ function myFunction(x) {
       logo.setAttribute("width", "358");
     } else {
         logo.setAttribute("width", "708");
-        
     }
 }
 

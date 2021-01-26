@@ -7,3 +7,4 @@ import './View/menuHover';
 import './Model/responsiveMedia';
 import './Controller/formSubmit';
 import './View/scrollEvents';
+import './View/mealClick';
