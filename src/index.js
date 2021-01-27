@@ -8,3 +8,4 @@ import './Model/responsiveMedia';
 import './Controller/formSubmit';
 import './View/scrollEvents';
 import './View/mealClick';
+import './View/allergyEvents';

@@ -27,6 +27,7 @@
     "webpack-dev-server": "^3.11.2"
   },
   "devDependencies": {
-    "babel-polyfill": "^6.26.0"
+    "babel-polyfill": "^6.26.0",
+    "favicons-webpack-plugin": "^4.2.0"
   }
 }

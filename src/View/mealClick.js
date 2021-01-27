@@ -17,6 +17,15 @@ let menuWrapper6 = document.getElementById('wrapper-6');
 let menuWrapper7 = document.getElementById('wrapper-7');
 let menuWrapper8 = document.getElementById('wrapper-8');
 
+let name1 = document.getElementById('name-1');
+let name2 = document.getElementById('name-2');
+let name3 = document.getElementById('name-3');
+let name4 = document.getElementById('name-4');
+let name5 = document.getElementById('name-5');
+let name6 = document.getElementById('name-6');
+let name7 = document.getElementById('name-7');
+let name8 = document.getElementById('name-8');
+
 
 for (let i = 0; i < arr.length; i++) {
     if (i < 5) {
@@ -27,6 +36,8 @@ for (let i = 0; i < arr.length; i++) {
             menuWrapper1.style.opacity = '1';
             menuWrapper1.style.transitionDuration = '0.25s';
             menuWrapper1.style.transitionDelay = '0.25s';
+            let text = arr[i].textContent;
+            name1.textContent = text;
         });
         arr2[0].addEventListener('click', () => {
             document.getElementById('menu-box-1').style.transform = 'rotateY(0deg)';
@@ -44,6 +55,8 @@ for (let i = 0; i < arr.length; i++) {
             menuWrapper2.style.opacity = '1';
             menuWrapper2.style.transitionDuration = '0.25s';
             menuWrapper2.style.transitionDelay = '0.25s';
+            let text = arr[i].textContent;
+            name2.textContent = text;
         });
         arr2[1].addEventListener('click', () => {
             document.getElementById('menu-box-2').style.transform = 'rotateY(0deg)';
@@ -61,6 +74,8 @@ for (let i = 0; i < arr.length; i++) {
             menuWrapper3.style.opacity = '1';
             menuWrapper3.style.transitionDuration = '0.25s';
             menuWrapper3.style.transitionDelay = '0.25s';
+            let text = arr[i].textContent;
+            name3.textContent = text;
         });
         arr2[2].addEventListener('click', () => {
             document.getElementById('menu-box-3').style.transform = 'rotateY(0deg)';
@@ -78,14 +93,16 @@ for (let i = 0; i < arr.length; i++) {
             menuWrapper4.style.opacity = '1';
             menuWrapper4.style.transitionDuration = '0.25s';
             menuWrapper4.style.transitionDelay = '0.25s';
+            let text = arr[i].textContent;
+            name4.textContent = text;
         });
         arr2[3].addEventListener('click', () => {
             document.getElementById('menu-box-4').style.transform = 'rotateY(0deg)';
             menuLayer4.style.opacity = '0';
             menuLayer4.style.pointerEvents = 'none';
-            menuWrapper.style.opacity = '0';
-            menuWrapper.style.transitionDuration = '0.25s';
-            menuWrapper.style.transitionDelay = '0.25s';
+            menuWrapper4.style.opacity = '0';
+            menuWrapper4.style.transitionDuration = '0.25s';
+            menuWrapper4.style.transitionDelay = '0.25s';
         });
     } else if (i < 25) {
         arr[i].addEventListener('click', () => {
@@ -95,6 +112,8 @@ for (let i = 0; i < arr.length; i++) {
             menuWrapper5.style.opacity = '1';
             menuWrapper5.style.transitionDuration = '0.25s';
             menuWrapper5.style.transitionDelay = '0.25s';
+            let text = arr[i].textContent;
+            name5.textContent = text;
         });
         arr2[4].addEventListener('click', () => {
             document.getElementById('menu-box-5').style.transform = 'rotateY(0deg)';
@@ -112,6 +131,8 @@ for (let i = 0; i < arr.length; i++) {
             menuWrapper6.style.opacity = '1';
             menuWrapper6.style.transitionDuration = '0.25s';
             menuWrapper6.style.transitionDelay = '0.25s';
+            let text = arr[i].textContent;
+            name6.textContent = text;
         });
         arr2[5].addEventListener('click', () => {
             document.getElementById('menu-box-6').style.transform = 'rotateY(0deg)';
@@ -129,6 +150,8 @@ for (let i = 0; i < arr.length; i++) {
             menuWrapper7.style.opacity = '1';
             menuWrapper7.style.transitionDuration = '0.25s';
             menuWrapper7.style.transitionDelay = '0.25s';
+            let text = arr[i].textContent;
+            name7.textContent = text;
         });
         arr2[6].addEventListener('click', () => {
             document.getElementById('menu-box-7').style.transform = 'rotateY(0deg)';
@@ -146,6 +169,8 @@ for (let i = 0; i < arr.length; i++) {
             menuWrapper8.style.opacity = '1';
             menuWrapper8.style.transitionDuration = '0.25s';
             menuWrapper8.style.transitionDelay = '0.25s';
+            let text = arr[i].textContent;
+            name8.textContent = text;
         });
         arr2[7].addEventListener('click', () => {
             document.getElementById('menu-box-8').style.transform = 'rotateY(0deg)';
