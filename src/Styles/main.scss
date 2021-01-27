@@ -440,16 +440,102 @@ body {
                         width: 100%;
                         height: 100%;
                         background:#ccd2d6;
+                        transition-duration: 0.25s;
                         border-radius: 12px;
                         opacity: 0;
                         pointer-events: none;
 
-                        .menu-layer-exit {
-                            width: 5vh;
-                            height: 5vh;
-                            z-index: 7;
-                            background: url(../Assets/arrow-left.svg);
-                            cursor: pointer;
+                        .menuLayer-wrapper {
+                            transform: rotateY(180deg);
+
+                            .menu-layer-exit {
+                                margin: 2vh 0 3.25vh 1.5vh;
+                                width: 5vh;
+                                height: 5vh;
+                                z-index: 7;
+                                background: url(../Assets/arrow-left.svg);
+                                cursor: pointer;
+                            }
+
+                            .menu-layer-header {
+                                width: 100%;
+                                height: 22.5vh;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-around;
+                                
+                                .header-name {
+                                    margin-left: 1vw;
+                                    h2 {
+                                        font-size: 2.4rem;
+                                        font-family: 'Poppins';
+                                    }
+                                }
+                                .header-desc{
+                                    margin-left: 1vw;
+
+                                    .desc-title {
+                                        h3 {
+                                        font-size: 1.4rem;
+                                        font-family: 'Poppins';
+                                        }
+                                    }
+                                    .desc-par {
+                                        p {
+                                            font-size: 0.9rem;
+                                            font-family: 'Poppins';
+                                        }
+                                    }
+                                }
+                            }
+                            .menu-layer-footer {
+                                width: 100%;
+                                height: 22.5vh;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-around;
+                               
+                                .footer-cal {
+                                    height: 7.5vh;
+                                    margin-left: 1vw;
+                                    h4 {
+                                        font-size: 1.1rem;
+                                        font-family: 'Poppins';
+                                    }
+                                }
+                                .footer-allergy {
+                                    height: 15vh;
+                                    margin-left: 1vw;
+
+                                    .allergy-title {
+                                        height: 6vh;
+
+                                        h3 {
+                                        font-size: 1.6rem;
+                                        font-family: 'Poppins';
+                                        }
+                                    }
+                                    .allergy-discs {
+                                        margin-top: -2vh;
+                                        width: 80%;
+                                        height: 7vh;
+                                        background: transparent;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+
+                                        .disc {
+                                            width: 5vh;
+                                            height: 5vh;
+                                            border-radius: 50px;
+                                        }
+                                        .disc1 {background: rgb(57, 144, 224);}
+                                        .disc2 {background: rgb(209, 185, 50);}
+                                        .disc3 {background: rgb(224, 70, 70);}
+                                        .disc4 {background: rgb(123, 206, 123);}
+                                    }
+                                }
+                            }
                         }
                     }
 
@@ -564,15 +650,98 @@ body {
                         border-radius: 12px;
                         opacity: 0;
                         pointer-events: none;
-                        
-
-                        .menu-layer-exit {
-                            width: 5vh;
-                            height: 5vh;
-                            z-index: 7;
-                            background: url(../Assets/arrow-left.svg);
-                            cursor: pointer;
+                        transition-duration: 0.25s;
+                        .menuLayer-wrapper {
                             transform: rotateY(180deg);
+
+                            .menu-layer-exit {
+                                margin: 2vh 0 3.25vh 1.5vh;
+                                width: 5vh;
+                                height: 5vh;
+                                z-index: 7;
+                                background: url(../Assets/arrow-left.svg);
+                                cursor: pointer;
+                            }
+
+                            .menu-layer-header {
+                                width: 100%;
+                                height: 22.5vh;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-around;
+                                
+                                .header-name {
+                                    margin-left: 1vw;
+                                    h2 {
+                                        font-size: 2.4rem;
+                                        font-family: 'Poppins';
+                                    }
+                                }
+                                .header-desc{
+                                    margin-left: 1vw;
+
+                                    .desc-title {
+                                        h3 {
+                                        font-size: 1.4rem;
+                                        font-family: 'Poppins';
+                                        }
+                                    }
+                                    .desc-par {
+                                        p {
+                                            font-size: 0.9rem;
+                                            font-family: 'Poppins';
+                                        }
+                                    }
+                                }
+                            }
+                            .menu-layer-footer {
+                                width: 100%;
+                                height: 22.5vh;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-around;
+                               
+                                .footer-cal {
+                                    height: 7.5vh;
+                                    margin-left: 1vw;
+                                    h4 {
+                                        font-size: 1.1rem;
+                                        font-family: 'Poppins';
+                                    }
+                                }
+                                .footer-allergy {
+                                    height: 15vh;
+                                    margin-left: 1vw;
+
+                                    .allergy-title {
+                                        height: 6vh;
+
+                                        h3 {
+                                        font-size: 1.6rem;
+                                        font-family: 'Poppins';
+                                        }
+                                    }
+                                    .allergy-discs {
+                                        margin-top: -2vh;
+                                        width: 80%;
+                                        height: 7vh;
+                                        background: transparent;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+
+                                        .disc {
+                                            width: 5vh;
+                                            height: 5vh;
+                                            border-radius: 50px;
+                                        }
+                                        .disc1 {background: rgb(57, 144, 224);}
+                                        .disc2 {background: rgb(209, 185, 50);}
+                                        .disc3 {background: rgb(224, 70, 70);}
+                                        .disc4 {background: rgb(123, 206, 123);}
+                                    }
+                                }
+                            }
                         }
                     }
 
@@ -1334,8 +1503,74 @@ button:focus {
                 .menuBox {
                     width: 85vw !important;
                     height: 33vh !important;
+
+                        .menu-layer-exit {
+                            margin: 1vh 0 1vh 1vh !important;
+                            width: 4vh !important;
+                            height: 4vh !important;
+                        }
+
+                        .menu-layer-header {
+                            height: 13vh !important;
+                            display: flex;
+                            flex-direction: column;
+                            
+                            .header-name {
+                                margin-left: 7vw !important;
+                                h2 {
+                                    font-size: 2rem !important;
+                                }
+                            }
+                            .header-desc{
+                                margin-left: 7vw !important;
+                                .desc-title {
+                                    h3 {
+                                    font-size: 1.1rem !important;
+                                    }
+                                }
+                                .desc-par {
+                                    p {
+                                        width: 80% !important;
+                                        font-size: 0.8rem !important;
+                                    }
+                                }
+                            }
+                        }
+                        .menu-layer-footer {
+                            height: 13vh !important;
+                           
+                            .footer-cal {
+                                height: 4vh !important;
+                                margin-left: 7vw !important;
+                                h4 {
+                                    font-size: 1.1rem !important;
+                                }
+                            }
+                            .footer-allergy {
+                                height: 9vh !important;
+                                margin-left: 7vw !important;
+
+                                .allergy-title {
+                                    height: 4vh !important;
+
+                                    h3 {
+                                    font-size: 1.3rem !important;
+                                    }
+                                }
+                                .allergy-discs {
+                                    width: 60% !important;
+                                    margin-top: 0vh !important;
+                                    height: 5vh !important;
+                                    .disc {
+                                        width: 4vh !important;
+                                        height: 4vh !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
-            }
+            
             #menu-content-bottom {
                 height: 170vh !important;
                 flex-direction:column !important ;
@@ -1343,6 +1578,71 @@ button:focus {
                 .menuBox {
                     width: 85vw !important;
                     height: 33vh !important;
+
+                    .menu-layer-exit {
+                        margin: 1vh 0 1vh 1vh !important;
+                        width: 4vh !important;
+                        height: 4vh !important;
+                    }
+
+                    .menu-layer-header {
+                        height: 13vh !important;
+                        display: flex;
+                        flex-direction: column;
+                        
+                        .header-name {
+                            margin-left: 7vw !important;
+                            h2 {
+                                font-size: 2rem !important;
+                            }
+                        }
+                        .header-desc{
+                            margin-left: 7vw !important;
+                            .desc-title {
+                                h3 {
+                                font-size: 1.1rem !important;
+                                }
+                            }
+                            .desc-par {
+                                p {
+                                    width: 80% !important;
+                                    font-size: 0.8rem !important;
+                                }
+                            }
+                        }
+                    }
+                    .menu-layer-footer {
+                        height: 13vh !important;
+                       
+                        .footer-cal {
+                            height: 4vh !important;
+                            margin-left: 7vw !important;
+                            h4 {
+                                font-size: 1.1rem !important;
+                            }
+                        }
+                        .footer-allergy {
+                            height: 9vh !important;
+                            margin-left: 7vw !important;
+
+                            .allergy-title {
+                                height: 4vh !important;
+
+                                h3 {
+                                font-size: 1.3rem !important;
+                                }
+                            }
+                            .allergy-discs {
+                                width: 60% !important;
+                                margin-top: 0vh !important;
+                                height: 5vh !important;
+                                .disc {
+                                    width: 4vh !important;
+                                    height: 4vh !important;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
