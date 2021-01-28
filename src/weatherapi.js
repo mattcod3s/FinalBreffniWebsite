@@ -17,7 +17,6 @@ bookingButton.addEventListener('click',  () => {
             
             const { timezone }  = data;
             const {temperature, summary} = data.currently;
-            console.log(data, summary);
             
             if(summary.includes("Cloudy") || summary.includes("Overcast")) {
                 apiWrapper.classList.remove("clear");
